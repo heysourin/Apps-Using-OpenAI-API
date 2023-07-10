@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font styles for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #21252eda;
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: 600;
+  padding: 300px 0;
+}
+/* Styling for the side bar */
+.side-bar {
+  background-color: #202123;
+  width: 244px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-bar button {
+  background-color: transparent;
+  color: #fff;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.side-bar .history {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  height: 100%;
+  color: #938a8a;
+  font-weight: 100;
+}
+.history p{
+  cursor: pointer;
+}
+/* .side-bar .nav {
+  margin-top: 20px;
+  text-align: center;
+} */
+
+/* Styling for the main section */
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.main #output {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.main .bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main .input-container {
+  flex-grow: 1;
+  display: flex;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  max-width: 950px;
+}
+
+/* .main .input-container input[type='text'] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+} */
+
+.main .input-container #submit {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+  font-size: xx-large;
+  cursor: pointer;
+  /* position: absolute; */
+  /* right: 0; */
+  /* bottom: 15px; */
+}
+
+input {
+  border: none;
+  background-color: #88888861;
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.main .info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 11px;
+  padding: 10px;
+  color: #88888861;
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+  .side-bar {
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
