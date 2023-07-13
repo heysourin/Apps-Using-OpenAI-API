@@ -1,4 +1,5 @@
-const API_KEY = <YOUR-API-KEY>;
+// const API_KEY = <YOUR-API-KEY>;
+const API_KEY = "xyz";
 
 const submitButton = document.querySelector("#submit");
 submitButton.addEventListener("click", getMessage);

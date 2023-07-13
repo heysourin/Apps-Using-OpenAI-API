@@ -1,0 +1,84 @@
+* {
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: #343541;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #202123;
+  height: 100vh;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  border: solid 0.5px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+nav {
+  border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.history {
+  padding: 10px;
+  margin: 10px;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+  margin: 15px 0 15px 0;
+  cursor: pointer;
+}
+
+.info {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  /* padding: 10px; */
+}
+
+.feed {
+  padding-top: 550px;
+}
+.bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.input-container {
+  position: relative;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
