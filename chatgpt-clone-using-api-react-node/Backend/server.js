@@ -8,7 +8,6 @@ app.use(cors());
 require("dotenv").config();
 
 const API_KEY = process.env.API_KEY;
-// const API_KEY = "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";
 
 app.post("/completions", async (req, res) => {
   const options = {
